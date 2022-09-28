@@ -65,7 +65,7 @@ const isLetterInWord = (letter) => {
   // You can change this to choose a random word from WORDS once you
   // finish this lab but we hard code it so we know what the word is
   // and can tell if things look correct for this word
-  const word = 'hello';
+  const word = WORDS[Math.floor(Math.random() * WORDS.length)];
 
   // call the function that makes an empty line for each letter in the word
   createDivsForChars(word);
