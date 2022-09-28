@@ -51,7 +51,10 @@ const disableLetterButton = (buttonEl) => {
 
 
 const isLetterInWord = (letter) => {
-  // Replace this with your code
+  const letterDiv = document.querySelectorAll(`.${letter}`);
+  return (letterDiv.length != 0);
+
+
 };
 
 // This is like if __name__ == '__main__' in Python
@@ -73,5 +76,8 @@ const isLetterInWord = (letter) => {
   // in the next lab, you will be adding functionality to handle when
   // someone clicks on a letter
   disableLetterButton(buttonEl);
+
+  isLetterInWord(letter);
+
 })();
 
